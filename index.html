@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>ICT 10</title>
+    <style>
+
+        body{
+            background-image: url('https://i.pinimg.com/736x/d1/42/45/d14245a2294f69bad6bef67740496610.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        #output1{
+            border: 5px solid rgb(40, 0, 80);
+            box-shadow: (0px 5px 5px) rgb(233, 133, 71); 
+            height: 500px;
+            border-radius: 10px; 
+            font-size: 20px;
+        }
+
+        header {
+            width: 100%;
+            padding: 15px 0;
+            background-color: rgba(15, 10, 35, 0.9);
+            border-bottom: 2px solid rgb(96, 4, 188);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ff9d3b;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        
+        .cosmic-container {
+            width: 100%;
+            max-width: 650px;
+            padding: 30px;
+            border: 5px solid rgb(96, 4, 188);
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgb(96, 4, 188), inset 0px 0px 15px rgba(96, 4, 188, 0.4);
+            background: rgba(15, 10, 35, 0.85);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff9d3b;
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 157, 59, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #8c0e47; 
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid rgb(66, 10, 90)66f;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #ffd2e2;
+            color: #8939bb;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, rgb(96, 4, 188), #3b0270);
+            color: #ff9d3b;
+            border: 1px solid #ff9d3b;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #7b0ad6, rgb(96, 4, 188));
+            box-shadow: 0 0 12px rgba(233, 133, 71, 0.6);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        #result {
+            margin-top: 25px;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff9d3b;
+            text-shadow: 0 0 8px rgba(255, 157, 59, 0.6);
+            min-height: 30px;
+        }
+
+        footer {
+           position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            background-color: rgba(15, 10, 35, 0.59);
+            border-top: 2px solid rgba(154, 4, 188, 0.784);
+            text-align: center;
+            font-size: 16px;
+            color: #ff9d3bf8;
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body>
+     
+       <div class="cosmic-container">
+       <header>
+        <h1>COSMIC WRITER'S CLUB</h1>
+    </header>
+    <br>
+
+        <label>First Name:</label>
+        <input type="text" id="first-name" placeholder="e.g. John">
+
+        <label>Last Name:</label>
+        <input type="text" id="last-name" placeholder="e.g. Doe">
+
+        <button py-click="check_membership">MEMBERSHIP</button>
+
+ 
+        <div id="result"></div>
+    </div>
+
+    <br>
+ <footer>
+        <p> Raina Isidro. Seatwork 1, 2nd Quarter. 10-Emerald</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
